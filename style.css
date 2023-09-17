@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(250, 200, 200);
+    font-family: "Open Sans Condensed", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    border: none;
+}
+
+.heading{
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: rgb(41, 37, 37);
+    text-shadow: 1px black;
+}
+
+.btn-toggle{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px  25px;
+}
+
+.btn{
+    background-color: rgb(241, 31, 59);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+.text-container.show{
+    transform: translate(-50%, 0);
+}
+
+.text-container {
+    background-color: rgb(195, 228, 11);
+    width: 500px;
+    max-width: 90vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    border-radius: 10px;
+    padding: 1.25rem;
+    transform: translate(-50%, -800px);
+    transition: all 1s ease-in-out;
+}
+
+.close{
+    float: right;
+    text-align: right;
+    cursor: pointer;
+}
+#voices{
+    background-color: rgb(9, 206, 58);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 0.75rem;
+    padding: 0.75rem  1rem;
+    border: none;
+    width: 100%;
+}
+
+textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    height: 150px;
+    width: 100%;
+}
+
+.text-container #btn{
+    width: 100%;
+}
+h3{
+    color: white;
+    font-family: inherit;
+}
+#btn{
+    background-color: rgb(13, 44, 214);
+    color: black;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#btn:hover{
+        opacity: 0.9;
+    }
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr)); 
+    gap: 20px; 
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.card{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 10px rgb(239, 243, 6);
+    border-radius: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info{
+    background-color: rgba(23, 11, 197, 0.593);
+    color: white;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}

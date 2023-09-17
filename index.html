@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Text Reader</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Text Speech Reader</h1>
+      <button id="toggleBtn" class="btn btn-toggle">Toggle Text Box</button>
+    </div>
+
+    <div id="textBox" class="text-container show">
+      <div id="close" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h3>Choose Voice</h3>
+      <select id="voices"></select>
+      <textarea id="text" placeholder="Enter Text "></textarea>
+      <button id="btn">Read Text</button>
+    </div>
+    <div class="cards"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
